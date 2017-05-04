@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-Up/Login Form</title>
+
+
+
+
+</head>
+
+<body>
+<h1>here it is</h1>
+<?php
+
+session_start();
+   $username = $_SESSION['username'];
+$category = $_POST['selected'];
+$image = file_get_contents($_FILES["image"]["temp_name"]);
+$imageType = mysql_real_escape_string($_FILES["image"]["type"]);
+
+$description = $_POST['description'];
+if(isset($_POST['selected']))
+{
+if(substr($imageType,0,5)=="image")
+{
+
+$query = "insert into Imagedata values ('$username','$category', '$image', '$description')";
+echo "Image uploaded Successfully";
+}
+else
+{
+echo "Only images are allowed!!!";
+}
+
+  //including the connection page
+  include('./connect_to_db.php');
+
+  //get an instance
+  $db = new Connection();
+
+  //connect to database
+  $db->connect();
+
+  //query the database
+  mysql_query( $query );
+
+  //close once finished to free up resources
+  $db->close();
+  include('./firstPage.html');
+
+    exit();
+
+}
+?>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="first.js"></script>
+    <link rel="stylesheet" type="text/css" href="first.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+<body>
+
+<h3>
+    Post Ad
+</h3>
+<h3> Select Category</h3>
+
+<h1>This is first value</h1>
+
+
+
+<form action="uploadad.php" method="post"><br>
+
+    <select  id="selected">
+    <option  value="Clothing"><script language="JavaScript">document.write(cat1); </script></option>
+    <option  value="Toys"> <script language="JavaScript">document.write(cat2); </script></option>
+    <option  value="Kitchen"> <script language="JavaScript">document.write(cat3); </script></option>
+    <option  value="Electronics"> <script language="JavaScript">document.write(cat4); </script></option>
+    <option  value="Sports"> <script language="JavaScript">document.write(cat5); </script></option>
+    <option  value="Miscellaneous Goods">  <script language="JavaScript">document.write(cat6); </script></option>
+    </select><br>
+    <h3>Select image to post</h3>
+    <br>
+
+    <input type="file" name="image"><br>
+    <input type="submit" value="upload">
+    <br>
+    <textarea rows="4" cols="50" name="description" placeholder="Enter description here ..."></textarea>
+
+<input type="submit" value="Submit">
+
+
+
+</form>
+</body>
+</html>

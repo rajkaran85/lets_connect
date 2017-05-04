@@ -1,0 +1,66 @@
+
+.ody{
+    position: absolute;
+    background-color: lightslategray;
+}
+
+
+.cat {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 70%;
+
+}
+.pics
+{
+    position: relative;
+    margin-top: 16%;
+    margin-left: 20%;
+
+}
+.changingPics
+{
+    position: relative;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+.img
+{
+    position: relative;
+    z-index: -1;
+}
+.requesting
+{
+    position: relative;
+    right: 0px;
+    top:2%;
+
+
+}
+.changeColor
+{
+    position: absolute;
+    margin-left: 95%;
+    top:40px;
+
+}
+.postItem
+{
+    text-align: center;
+    background-color: lightslategray;
+}
+.adminBar
+{
+
+}
+.adminServices
+{
+    position: relative;
+    margin-top: 5%;
+}
+.adminButtons
+{
+    position: relative;
+    margin-left: 50%;
+    margin-top: 12%;
+}
